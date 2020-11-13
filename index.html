@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- flavico error fixer -->
+    <link rel="shortcut icon" href="#" />
+    <!-- fontawesome.com  cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- lobster font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div class="pervious-song song-changer">
+            <p id="pervious"><i class="fas fa-chevron-circle-left"></i></p>
+        </div>
+
+        <div class="mini-cont">
+            <div class="singer-picture">
+                <img id="artist-image" src="img/lanaDelRey.jpg" alt="Song-picture-container">
+            </div>
+            <div class="song-info-container">
+                <h3 id="song-title">Song Title</h3>
+                <h4 id="song-author">Song Author</h4>
+           
+                <div class="audio">
+                    <audio id="myAudio" controls controlsList="nodownload">
+                        <source id="song-player" src="tracks/Guns N' Roses - November Rain LYRICS.mp3" type="audio/mp3">
+                      Your browser does not support the audio element.
+                      </audio>
+                      <p id="ending-time">3:00</p>
+                      <div class="diferent-orders">
+                        <p class="loop">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </p>
+                        <p class="shuffle">
+                            <i class="fas fa-random"></i>
+                        </p>
+                    </div>
+                </div>
+
+            
+
+                <div class="play-forward">
+                    <p id="backward-btn"><i class="fas fa-backward"></i></p>
+                    <p id="play-btn"><i class="fas fa-play"></i></p>
+                   <p id="forward-btn"><i class="fas fa-forward"></i></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="next-song song-changer">
+            <p id="next"><i class="fas fa-chevron-circle-right"></i></p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
